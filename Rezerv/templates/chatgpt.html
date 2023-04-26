@@ -1,0 +1,23 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="../static/css/chatgpt.css">
+    <script src="../static/js/chatgpt.js"></script>
+    </head>
+    <body>
+      <div id="load"></div>
+      <div id="contents">
+           <h1>MQChat</h1>
+          <form class="form-container" action="/chatgpt" method="post">
+            <label for="question">Enter your question:</label>
+            <input type="text" id="question" name="question">
+            <br>
+            <input type="submit" value="Submit">
+            <textarea id="response" name="response" rows="20" cols="50">{{answer}}</textarea>
+          </form>
+      </div>
+      <div style="display:inline-block;margin:auto;left: 60%;position: absolute;">
+        <a href="/" > <button>Rezerveo</button></a>
+      </div>
+        
+    </body>
+</html>
